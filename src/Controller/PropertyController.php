@@ -40,7 +40,7 @@ class PropertyController extends AbstractController
     public function index(PaginatorInterface $paginator, Request $request): Response
     {
         $search = new PropertySearch();
-        $form = $this->createForm(PropertySearchType::class,$search);
+        $form = $this->createForm(PropertySearchType::class, $search);
         $form->handleRequest($request);
 
         $properties = $paginator->paginate(
@@ -52,7 +52,7 @@ class PropertyController extends AbstractController
         return $this->render('property/index.html.twig', [
             'current_menu' => 'properties',
             'properties' => $properties,
-            'form'=>$form->createView()
+            'form' => $form->createView()
         ]);
     }
 
