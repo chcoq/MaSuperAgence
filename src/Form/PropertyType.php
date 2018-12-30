@@ -28,12 +28,14 @@ class PropertyType extends AbstractType
             ])
             ->add('options', EntityType::class, [
                     'class' => Option::class,
+                    'required' => false,
                     'choice_label' => 'name',
                     'multiple' => true
                 ]
             )
             ->add('imageFile', FileType::class, [
-                'required' => false
+                'required' => false,
+                'post_max_size_message' => 5,
             ])
             ->add('city')
             ->add('adress')

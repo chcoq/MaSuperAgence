@@ -1,3 +1,4 @@
+public/images/properties
 
 ###> symfony/framework-bundle ###
 /.env.local
@@ -17,5 +18,5 @@
 ###< symfony/web-server-bundle ###
 
 ###> liip/imagine-bundle ###
-/public/media/cache/
+/public/media
 ###< liip/imagine-bundle ###

@@ -42,7 +42,8 @@ class Property
     /**
      * @var File|null
      * @Assert\Image(
-     *     mimeTypes="image/jpeg"
+     *     mimeTypes="image/jpeg",
+     *     maxSize="10485760"
      * )
      * @Vich\UploadableField(mapping="property_image",fileNameProperty="filename")
      */
