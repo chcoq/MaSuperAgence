@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdf00628-a091-4cd7-9f9b-a1f04ae44005" name="Default" comment="9 gestion des option &#10;-Ajout de JS select2 pour les options&#10;-modification des recherche avec le champs option">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/properties/5c281116c50e4090068252.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20181230001554.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20181230002242.php" />
+    <list default="true" id="cdf00628-a091-4cd7-9f9b-a1f04ae44005" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/routes/liip_imagine.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubsriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/bootstrap.php" afterPath="$PROJECT_DIR$/config/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/bundles.php" afterPath="$PROJECT_DIR$/config/bundles.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Property.php" afterPath="$PROJECT_DIR$/src/Entity/Property.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Admin/Property/_form.html.twig" afterPath="$PROJECT_DIR$/templates/Admin/Property/_form.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,10 +60,22 @@
       <file leaf-file-name="Property.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Property.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="370" column="47" lean-forward="false" selection-start-line="370" selection-start-column="47" selection-end-line="370" selection-end-column="47" />
+            <state relative-caret-position="247">
+              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
                 <element signature="e#30#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageCacheSubsriber.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Listener/ImageCacheSubsriber.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="e#32#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,14 +105,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_property.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_property.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liip_imagine.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,6 +153,7 @@
       <find>edit</find>
       <find>property</find>
       <find>option_</find>
+      <find>imagef</find>
     </findStrings>
     <replaceStrings>
       <replace>option</replace>
@@ -187,9 +207,11 @@
         <option value="$PROJECT_DIR$/src/Repository/PropertyRepository.php" />
         <option value="$PROJECT_DIR$/src/Form/PropertyType.php" />
         <option value="$PROJECT_DIR$/templates/Admin/Property/_form.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/Property.php" />
         <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/liip_imagine.yaml" />
         <option value="$PROJECT_DIR$/templates/property/_property.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Property.php" />
+        <option value="$PROJECT_DIR$/src/Listener/ImageCacheSubsriber.php" />
       </list>
     </option>
   </component>
@@ -234,6 +256,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MaSuperAgence" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaSuperAgence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaSuperAgence" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaSuperAgence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MaSuperAgence" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Listener" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,7 +416,7 @@
       <updated>1545316526553</updated>
       <workItem from="1545316534530" duration="64396000" />
       <workItem from="1545990100095" duration="957000" />
-      <workItem from="1546116391586" duration="8799000" />
+      <workItem from="1546116391586" duration="10964000" />
     </task>
     <task id="LOCAL-00001" summary="2 Nos premières pages">
       <created>1545401385742</created>
@@ -434,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546127469178</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="10 image a la une&#10;-nouveau champ dans la base de donnée&#10;-possibilité d'ajouter une image (admin)&#10;-affichage des images pour les clients">
+      <created>1546130479729</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546130479729</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74152000" />
+    <option name="totallyTimeSpent" value="76317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="800" y="0" width="800" height="870" extended-state="0" />
@@ -510,7 +571,8 @@
     <MESSAGE value="9 gestion des option &#10;-creation de l'entité&#10;-Creation du CRUD" />
     <MESSAGE value="9 gestion des option &#10;-RollBack de la BDD (mappedBy&lt;-&gt; inversedBy)&#10;-Ajout du choicetype dans l'Admin" />
     <MESSAGE value="9 gestion des option &#10;-Ajout de JS select2 pour les options&#10;-modification des recherche avec le champs option" />
-    <option name="LAST_COMMIT_MESSAGE" value="9 gestion des option &#10;-Ajout de JS select2 pour les options&#10;-modification des recherche avec le champs option" />
+    <MESSAGE value="10 image a la une&#10;-nouveau champ dans la base de donnée&#10;-possibilité d'ajouter une image (admin)&#10;-affichage des images pour les clients" />
+    <option name="LAST_COMMIT_MESSAGE" value="10 image a la une&#10;-nouveau champ dans la base de donnée&#10;-possibilité d'ajouter une image (admin)&#10;-affichage des images pour les clients" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -525,14 +587,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20181221144711.php" />
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20181221145007.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -790,13 +844,13 @@
         <state relative-caret-position="357">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
-            <element signature="e#611#641#0#PHP" expanded="true" />
-            <element signature="e#1224#1244#1#PHP" expanded="true" />
-            <element signature="e#1287#1315#0#PHP" expanded="true" />
-            <element signature="e#1844#1864#0#PHP" expanded="true" />
-            <element signature="e#1935#1964#0#PHP" expanded="true" />
-            <element signature="e#2525#2545#1#PHP" expanded="true" />
+            <element signature="e#40#62#0#PHP" expanded="false" />
+            <element signature="e#611#641#0#PHP" expanded="false" />
+            <element signature="e#1224#1244#1#PHP" expanded="false" />
+            <element signature="e#1287#1315#0#PHP" expanded="false" />
+            <element signature="e#1844#1864#0#PHP" expanded="false" />
+            <element signature="e#1935#1964#0#PHP" expanded="false" />
+            <element signature="e#2525#2545#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,14 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/property/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -885,22 +931,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Property.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="370" column="47" lean-forward="false" selection-start-line="370" selection-start-column="47" selection-end-line="370" selection-end-column="47" />
+        <state relative-caret-position="247">
+          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
             <element signature="e#30#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Listener/ImageCacheSubsriber.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="588">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#32#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
