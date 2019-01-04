@@ -1,0 +1,54 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block body %}
+    <div class="mx-auto" style="width: 800px;">
+        <h1>Demande de contact : {{ contact.property.title }}</h1>
+
+
+        <table style="width: 800px ;margin-top: 50px" class="table table-light ">
+
+            <tbody>
+            <tr>
+                <th style="width: 150px" scope="row">Nom du bien</th>
+                <td>
+                    <a href="{{ url('property.show',{id:contact.property.id , slug:contact.property.slug}) }}">{{ contact.property.title }}</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Nom</th>
+                <td>{{ contact.lastname |capitalize }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Prénom</th>
+                <td>{{ contact.firstname|capitalize }}</td>
+
+            </tr>
+            <tr>
+                <th scope="row">N° téléphone</th>
+                <td>{{ contact.phone }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>{{ contact.email }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Message</th>
+                <td>{{ contact.message |nl2br }}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+{% endblock %}
